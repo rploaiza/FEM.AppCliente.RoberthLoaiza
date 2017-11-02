@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/licors"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/licorImg"
+                    android:layout_width="122dp"
+                    android:layout_height="201dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.01" />
+
+                <TextView
+                    android:id="@+id/descrip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="218dp"
+                    android:layout_margin="50dp"
+                    android:layout_weight="0.95"
+                    android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linearLayout2">
+
+                <TextView
+                    android:id="@+id/descrip2"
+                    android:layout_width="136dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.51"
+                    android:scrollbars="vertical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/descrip3"
+                    android:layout_width="158dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.34"
+                    android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.51"
+            android:orientation="horizontal"
+            android:layout_marginTop="221dp"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="189dp"
+            android:layout_marginStart="189dp"
+            android:weightSum="1">
+
+                <Button
+                    android:id="@+id/Comment"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="0.49"
+                    android:text="Comentar" />
+        </LinearLayout>
+
+</RelativeLayout>
