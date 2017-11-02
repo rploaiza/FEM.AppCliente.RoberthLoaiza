@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="es.upm.alumnos.femappclienteroberthloaiza.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/nombreLicor"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:ems="10"
+            android:hint="Nombre de licores"
+            android:inputType="textPersonName"
+            android:text="Corona Extra" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/actionModeWebSearchDrawable" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/formContainer"
+        android:background="@drawable/licors"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/licorsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>
